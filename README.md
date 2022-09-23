@@ -3,3 +3,22 @@ Projeto constitui oferecer uma busca simplificada por imovel tanto para compra e
 
 Considerando um visual sem poluição que seja facil ao usuario  entender e pesquisar o que necessita.
 
+
+desktop
+
+<div>
+    <img src="https://raw.githubusercontent.com/cardosource/OnePageImobiliaria/main/desktop.png" width="300"/>
+  
+
+  
+</div>
+
+
+
+responsivo
+
+<div>
+ <img src="https://raw.githubusercontent.com/cardosource/OnePageImobiliaria/main/responsivo.png" width="300" />
+  
+</div>
+
