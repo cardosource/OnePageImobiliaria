@@ -1,0 +1,919 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,400&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+   outline: 0;
+   box-sizing: border-box;
+}
+body{
+    background-color: #fff9ed;
+}
+/*organização dos campos*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+/*tamanho dos campos*/
+.tb{
+    width: 100%;
+    height: 400px;
+    background-color: #ffa500;
+    display: flex;
+    
+}
+/*cabecalho*/
+
+.tpl{
+   
+    height: 400px;
+    transform: skew(25deg);
+    margin-left:-1000px;
+    width:calc(40vw + 1000px);
+    background-color: orange;
+    box-shadow: 10px 13px 12px #b37300;
+
+}
+.imagem .modelo {
+
+   margin-left: 70%;
+   margin-top: 10px;
+   transform: skew(-23deg);
+   border-radius: 50%;
+   width: 400px;
+   height: 370px; 
+}    
+
+
+
+
+/*fontes*/
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+   
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+ 
+    font-weight: bold;
+}
+/*fim fontes*/
+.tph{
+    width: 60%;
+    height: 100%;
+    
+}
+
+.apresentacao{
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 14px;
+
+}
+.tx{
+    width: 630px;
+    height: 60px;
+    gap: 72px;    
+}
+
+.nomeempresa {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-right: 66px;
+    margin-top: 8px;
+}
+
+.servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    margin-right: 16px;
+}
+
+.orcamento{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 60px;
+}
+
+.redesociais{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 60px;
+    color: black;
+}
+
+input[type="submit"]{
+    width: 302px;
+    margin-top: 15px;
+    height: 50px;
+    border: 0;
+    background-color: orange;
+    border: solid black 1px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px; 
+    cursor: pointer;
+}
+
+
+.proximo{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 16px;
+}
+
+
+/*fim serviço*/
+
+
+/*--------Pesquisa ------*/
+.ps{
+    width: 100%;
+    height: 120px;
+    margin-top: 1px
+}
+
+#label,#pesquisar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 301px;
+    height: 110px;
+}
+
+#pesquisar{
+    flex: 1px;
+    align-items: center;
+   
+}
+
+
+.pesquisas{
+    width: 50%;
+    
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2px;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    width: 100%;
+ 
+    height: 1px;
+    outline: none !important;
+    appearance:none;
+    border:none;
+    border-radius:30px;
+    background: #ffae1a;
+  }
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #e69500;
+    cursor: pointer;
+    border-radius:10px;
+    outline:none;
+  }
+  /* tooltip style */
+#pesquisar {
+ 
+    position:relative;
+    padding:20px 0;
+    
+    
+  }
+  
+  #pesquisar #presos {
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    visibility: hidden;
+    width: 100px;
+    background-color: #e69500;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top:-5px;
+    left:calc(0% - 0px);
+  }
+  
+  #pesquisar:hover #presos {
+    visibility: visible;
+  }
+  
+  
+.cidade{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+.opcao{
+        display: flex;    
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex: 1px;
+        width:  50%;
+}
+
+input[type="search"]{
+    background-color: #fff9ed;
+    color: orange;
+    font-size: 30px; 
+    height: 50px;
+    border: 0;
+    border-radius: 30px 0px 0px 30px;
+    border: solid #ffae1a 2px;
+    text-align: center;
+  }
+
+select#options{
+    width: 210px;
+    font-size: 20px;
+    color: #8a918a;;
+  }
+
+input[type="search"]:focus{
+        outline: 0;
+        border: 4px solid orange ;
+        }
+
+select[name="tipo de imovel"]{
+    background-color: #fff9ed;
+     margin-left: 1px;
+     width: 302px;
+    height: 50px;
+    border: 0;
+    border-radius: 0px 30px 30px 0px; 
+    border: solid #ffae1a 2px;
+  }
+
+select[name="tipo de imovel"]:focus{
+    outline: 0;
+    border: 4px solid orange ;
+    }
+
+input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    top: -10px;
+    left: -11px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 25px;
+    height:  25px;
+    border-radius:  25px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+ 
+.comodoInterno, .extra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+.d{
+    width: 24%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+.imgquarto, .imgbanheiro, .imggaragem , .imgsuite{
+    background-color: #ffae1a;  
+    height:100%;
+    border-radius: 15px 0px 0px 15px;  
+  }
+
+  
+.entradaquarto,  .entradabanheiro, .entradagaragem ,  .entrasuite{
+    border:  solid #ffae1a 2px;  
+    height:100%; 
+    display: flex;
+    width: 75%;
+    border-radius: 0px 15px 15px 0px; 
+  }
+
+input[type="text"]{
+    text-align: center;
+    height:80%;
+    width: 80%;
+    border: 0;
+    background-color: #fff9ed;
+  }
+
+/*-------- FIM Pesquisa ------*/
+  
+ 
+ /*------ a venda alugueis ----*/
+.rs{
+ 
+    width:940px;
+    height: 200px;
+    display: flex;
+    justify-content: center;  
+}
+
+.alugar{
+    
+    box-shadow: 10px 13px 12px #b37300;
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+}
+
+.imagemimovel img{
+    width:100%;
+    height: 100%;
+    opacity: 0.9;
+    transition: 0.9s;
+    border-radius: 15px 0px 0px 15px;
+}
+
+img:hover{
+    opacity: 12;
+}
+
+.local{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+  
+}
+
+.regiao{
+    background-color: #ffae1a; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width:100%;
+}
+
+.regiao p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: bold   ;
+    margin-top: -34px;
+}
+
+.detalheimovel{
+    background-color:#ffae1a;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:100%;
+}
+
+#iconemap{
+    height: 30px;
+    width:30px;
+    margin-top: -30px;
+}
+
+#iconedesconto{
+    height: 35px;
+    width:35px;
+    margin-left: 5px;
+}
+
+#iconecasa{
+    height: 25px;
+    width:25px;
+    margin-left: 5px;
+}
+
+#especie_{
+    height: 100%;
+    width:100%;
+    background-color: #ffae1a;
+    display: flex;
+    flex-direction: row;
+}
+
+#endereco{
+    height: 100%;
+    width:100%;
+    background-color: #ffae1a;
+}
+
+.separador{
+    background-color: rgb(206, 138, 11);
+    height: 0px;
+    width:3px;
+}
+
+.premissas{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.desconto{
+    background-color: #ffae1a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width:100%;
+    border-radius: 0px 15px 0px 0px;
+}
+
+.negocio{
+    background-color: #ffae1a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width:100%;
+}
+
+.fechar{
+    background-color: #ffae1a;
+     display: flex;  
+    align-items: center;
+    width:100%;
+    border-radius: 0px 0px 15px 0px;
+}
+
+
+input[type="button"]{
+    width:80%;
+    height: 40px;
+    border: 0;
+    border: solid black 1px;
+    border-radius: 30px;
+    color: #070606;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #ffae1a;
+    cursor: pointer;
+}
+
+/*------FIM a venda alugueis ----*/
+
+
+/*------Nossa Equipe ----*/
+.eq{
+    width: 70%;
+    height: 200px;
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.card{
+    width: 50%;
+    height: 200px;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: solid #ffae1a 1px;
+    box-shadow: 2px 13px 12px #b37300;
+}
+.cardimage{
+    margin-left: 5px; 
+    background-color: #89C5DD;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+
+
+.carddetalhes{
+    width: 59%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nomefuncionario{
+    display: flex;    
+    background-color: rgb(255 174 26);
+    border-radius: 0px 10px 0px 0px;
+}
+.cargofuncionario{
+    background-color: rgb(255 174 26);
+    width: 100%;
+    height: 200px;
+}
+
+.descricaofuncionario{
+    background-color: rgb(255 174 26);
+    width: 100%;
+    height: 500px;
+}
+
+
+.contatofuncionario{
+    display: flex;
+    align-items: center;
+    justify-content: end;  
+    background-color: #ffae1a;
+    width: 100%;
+    height: 200px;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.contatofuncionario img{
+    margin-left: 14px;
+    width: 30px;
+    height: 30px;
+}
+/*------FIM Nossa Equipe ----*/
+
+/*------Nossa Historia ----*/
+.hs{
+    width: 100%;
+    height: 400px;
+    background-color: #ffae1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.videoapresentacao{
+    width: 40%;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoapresentacao img{
+    width: 40%;
+    height: 350px;
+}
+.sobrenos{
+    width: 40%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*------FIM Nossa Historia ----*/
+
+/*-----Visite-nos---*/
+.mp{
+    width: 100%;
+    height: calc(400px- 20px);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mapagoogle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+}
+
+#mapalocal{
+    width: 100%;
+    height: 300px; 
+}
+
+.opensource{
+    width: 100%;
+    height: 40px;;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+
+/*-----FIM  Visite-nos---*/
+
+/*titulos*/
+span{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -20px;
+    
+}
+
+#preco{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+#precoIndicado{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    
+    
+
+}
+#nome_cidade{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#estado{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;   
+    font-style: oblique;
+    margin-left: 20px;
+}
+#disponivelpara{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: bold;
+     margin-top: 2px;
+     margin-left: 12px;
+   
+}
+
+#endereco_{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin-left: 16px;
+    font-weight: bold;
+}
+
+#pesquisar_imovel{
+    margin-top: 60px;
+}
+
+#nossa_equipe{
+    margin-top: 70px;
+}
+
+#nossa_historia{
+    margin-top: 265px;
+}
+
+#descontoAvista{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+#financiamento{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#nome{
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    margin-left: 16px;
+}
+
+#cargo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    margin-left: 16px; 
+    font-weight: bold;
+}
+
+#experiencia{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-left: 16px; 
+    font-weight: bold;
+}
+
+#nos{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;    
+    margin-left: 16px; 
+    font-style: italic;
+}
+
+#feitocom{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;  
+    color: white;
+    margin-right: 12px;
+    margin-top: -5px;    
+}
+#nossa_historia {
+    margin-top: 50px;
+}
+/*Fim titulos*/
+
+/*---------------------------------------------------------*/
+/*ajustes desktop*/
+
+
+@media(max-width:1054px){
+    .apresentacao {
+        background-color: orange;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .tph {
+        width: 100%;
+        height: 100%;
+    }
+    .tpl {
+        visibility: hidden;
+        height: none;
+        transform: none;
+        margin-left: none;
+        width: none;
+        background-color: none;        
+    }
+
+ .imagem{
+    width: 0px;
+    height: 0px;
+ }
+
+ .tb {
+    width: 100%;
+    height: 400px;
+    background-color: #ffa500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pesquisas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+      gap: 2px;
+}
+
+.ps {
+    width: 50%;
+    height: 120px;
+    margin-top: 1px;
+}
+
+.eq {
+    width: 70%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.rs {
+    width: 100%;
+    height: 183px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: solid #ffae1a 1px;
+    box-shadow: 2px 13px 12px #b37300;
+}
+
+.eq {
+    width: 70%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 36px;
+}
+
+.hs {
+    margin-top: 1px;
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 120%;
+    height: 3px;
+    outline: none !important;
+    appearance: none;
+    border: none;
+    border-radius: 30px;
+    background: #ffae1a;
+}
+#nossa_historia {
+    margin-top: 254px;
+}
+/*imagens*/
+
+@media(max-width:1216px){
+    #fgquarto, #fgbanheiro, #fgsuite, #imggaragem{
+        height: 50px;
+        width: 50px;
+    }
+
+    .comodoInterno, .extra{
+        margin-bottom: 20px;
+        width: 50%;
+        height: 120px;
+        margin-top: 1px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .d {
+        width: 100%;
+        height: 120%;
+        display: flex;
+        align-items: center;
+    }
+
+    .imgquarto, .imgbanheiro, .imgsuite, .imggaragem{
+        background-color: rgb(255, 174, 26);
+        width:  30%;
+         border-radius: 15px 0px 0px 15px;
+        }
+
+        #fgquarto, #fgbanheiro, #fggaragem, #fgsuite{
+            margin-left: 20px;
+        }
+
+        .opcao {
+            margin-bottom: 15px;
+        }
+        
+        .pesquisas {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            width: 60%;
+            gap: 2px;
+        }
+
+        #preco{
+            margin-right: 216px;
+        }
+        #pesquisar{
+            margin-left:-180px;
+        }
+
+        #label{
+            margin-left:-105px;
+
+    }
+}
+   
+/*---------------------------------------------------------*/
