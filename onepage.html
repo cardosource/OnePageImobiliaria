@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+<title>Imobiliária Inforce</title>
+</head>
+<body>
+    <main>
+
+        <div class="tb banner">
+            <div class="tpl">  
+                <div class="imagem">
+                    <img class="modelo" src="img/house-g56eb5afe5_640.jpg" alt="foto de uma casa de exemplo"> 
+   
+                </div> 
+             
+            </div>
+            <div class="tph apresentacao">
+                <div class="tx nomeempresa">
+                    <h1>Bem Vindo a Imobiliária XYZ</h1>
+                </div>
+                <div class="tx servico">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nesciunt eaque accusantium porro tenetur sunt</h2>
+                
+                    
+                </div>
+                <div class="tx orcamento">
+                    <input type="submit" value="faça um orçamento">
+                </div>
+                <div class="tx redesociais">
+                    <img class="iconerede" src="img/Facebook Circled.svg" alt="">
+                    <img class="iconerede"  src="img/Instagram Circle.svg" alt="">
+                    <img class="iconerede"  src="img/WhatsApp.svg" alt="">
+                </div>
+                <div class="tx proximo">
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                        </span>
+                </div>
+            </div>
+            
+        </div>
+
+        <h1 id="pesquisar_imovel">Pesquisar imovel</h1>
+
+         <div class="ps cidade">
+   
+            <input type="search" name="pesquisa cidade" placeholder="digite nome da cidade">
+
+            <select name="tipo de imovel" id="options">
+                <option value="opt1">Selecione região</option>
+                        <option value="opt2">Campo</option>
+                        <option value="opt3">Praia</option>
+                        <option value="opt4">Cidade</option>
+            </select>
+               
+         </div>
+      
+         <div class="ps opcao">
+            
+           
+           
+            <span><input type="radio" name="escolha"> Alugar</span><br>
+            <span><input type="radio" name="escolha"> Comprar</span><br>
+           
+            
+        </div>
+
+        <div class="ps comodoInterno">
+
+            <div class="d quartos">
+                <div class="d imgquarto">
+                    
+                    <img id="fgquarto" src="img/Insomnia.svg" alt="">
+                </div>
+                <div class="d entradaquarto">
+                    <input type="text" placeholder="quartos">
+                </div>
+            </div>
+
+            <div class="d banheiro">
+                <div class="d imgbanheiro">
+                    <img id="fgbanheiro" src="img/WC.svg" alt="">
+                </div>
+                <div class="d entradabanheiro">
+                    <input type="text" placeholder="banheiros">
+ 
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="ps extra">
+
+            <div class="d suite">
+                <div class="d imgsuite">
+                    <img id="fgsuite" src="img/Growing Plant.svg" alt="">
+                </div>
+                <div class="d entrasuite">
+                    <input type="text" placeholder="suite">
+                </div>
+            </div>
+
+            <div class="d banheiro">
+                <div class="d imggaragem">
+                    <img id="fggaragem" src="img/Car Rental.svg" alt="">
+                </div>
+                <div class="d entradagaragem">
+                    <input type="text" placeholder="garagem">
+ 
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div class="ps pesquisas">
+           
+            <div id="pesquisar">
+                <span id="presos"><p id="precoIndicado">R$</p></span>
+                <input type="range"min="0" max="100" value="0"  >&nbsp;&nbsp;
+                
+            </div>
+           
+        </div>
+     
+        <h1 id="resultados">Resultados da Pesquisa</h1>
+        <div class="rs resultados">
+            <div class="rs alugar">
+                <div class="rs imagemimovel">
+                    <img src="img/house-g56eb5afe5_640.jpg" alt="h" srcset="">
+                </div>
+                <div class="rs local">
+                    <div class="rs regiao">
+                        <img id="iconemap" src="img/Location.svg" alt="">
+                        <p id="nome_cidade">cidade</p> <p id="estado">Estado</p>
+                    </div>
+                    <div class="rs detalheimovel">
+                        <div id="especie_">
+                             <img id="iconecasa" src="img/Exterior.svg" alt="">
+                        <p id="disponivelpara">A venda</p>
+
+                        </div>
+                       
+                        <div id="endereco">
+                            <p id="endereco_">Bairro alguma</p>
+                            <p id="endereco_">endereço alguma coisa</p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+               
+                <div class="rs separador"></div>
+                <div class="rs premissas">
+                   
+                   <div class="rs desconto">
+                    
+                    <img id="iconedesconto" src="img/Us Dollar Circled.svg" alt="">
+                        <p id="descontoAvista">20 % a vista</p> 
+                    </div>
+                    <div class="rs negocio">
+                        <img id="iconedesconto" src="img/bank.svg" alt="">
+                        <p id="financiamento">Financiada</p>
+                    </div>
+                    
+                    <div class="rs fechar">
+                        <input type="button" value="NEGOCIAR">
+                    </div>
+                </div>
+               
+               
+                
+            </div>
+           
+        </div>
+
+        <h1 id="nossa_equipe">Nossa Equipe</h1>
+
+        <div class="eq equipe">
+            <div class="card">
+                <div class="cardimage"> 
+                    <img src="img/bighead.svg" alt="">
+                </div>
+                <div class="carddetalhes">
+                    <div class="nomefuncionario">
+                        <h2 id="nome">Personagem1</h2>
+                    </div>
+                    <div class="cargofuncionario">
+                        <p id="cargo">gerente</p>
+                    </div>
+                    <div class="descricaofuncionario">
+                        <p id="experiencia">Há 10 anos contribuindo para realizar sonho da casa própria</p>
+                    </div>
+                    <div class="contatofuncionario">
+                        <img src="img/Phone.svg" alt="">
+                        <img src="img/WhatsApp.svg" alt="">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardimage"> 
+                    <img src="img/bighead_.svg" alt="">
+                </div>
+                <div class="carddetalhes">
+                    <div class="nomefuncionario">
+                        <h2 id="nome">Personagem2</h2>
+                    </div>
+                    <div class="cargofuncionario">
+                        <p id="cargo">vendedor</p>
+                    </div>
+                    <div class="descricaofuncionario">
+                        <p id="experiencia">Colaborando para finalizar da melhor maneira possivel a sua conquista</p>
+                    </div>
+                    <div class="contatofuncionario">
+                        <img src="img/Phone.svg" alt="">
+                        <img src="img/WhatsApp.svg" alt="">
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+      <h1 id="nossa_historia">Nossa História</h1>
+        <div class="hs nossahistoria">
+            <div class="videoapresentacao">
+                <img src="img/play.svg" alt="">                
+
+            </div>
+            <div class="sobrenos">
+                <p id="nos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, cumque! Delectus hic atque debitis? Ipsum explicabo modi consequatur. Nisi a vitae sint, tempora aut ea consequuntur minima voluptates facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed ducimus veritatis magni dolorem! Distinctio, quam placeat voluptate blanditiis ipsa unde! Commodi eos aut voluptates asperiores, repellendus dicta aperiam magni!</p>
+                     </div>
+        </div>
+        <h1>Visite-nos</h1>
+        <div class="mp visitenos">
+            <div class="mapagoogle">
+                <img id="mapalocal" src="img/endereco.png" alt="">
+            </div>
+            <div class="opensource">
+                <div id="livre">
+                    <p id="feitocom">feito com</p>
+                </div>
+                <div id="fotolivre">
+                    <img src="img/Heart Suit.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
